@@ -1,0 +1,15 @@
+{
+  "name": "react-es6-tutorial",
+  "version": "1.0.0",
+  "description": "Guide step by step to introduce es6 new features",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "es6",
+    "react"
+  ],
+  "author": "joanrufe",
+  "license": "ISC"
+}
