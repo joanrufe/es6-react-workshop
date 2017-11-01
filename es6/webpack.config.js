@@ -15,13 +15,21 @@ module.exports = {
         path: path.join(basePath,'dist'),
         filename: 'app.js'
     },
+    module: {
+        loaders: [{
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: 'babel-loader'
+        }]
+    },
     devtool: 'inline-source-map',
     devServer: {
         hot:true
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html', // Name of template in ./src
+            filename: 'index.html', //Name of file in ./dist/
+            template: './src/index.html', //Name of template in ./src
             hash: true,
             cache: false
           }),
