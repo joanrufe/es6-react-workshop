@@ -1,5 +1,21 @@
-const NEWLINE = "\n\n";
+// Constants can be exported 
+export const NEWLINE = "\n\n";
 
-const logarea = document.getElementById("logger");
-const loggerFactory = elem => string => elem.innerHTML += string + NEWLINE;
-export const logger = loggerFactory(logarea);
+export class LoggerComponent {
+    constructor({elemId} = {elemId: "root"}){
+        this.$el = document.getElementById(elemId);
+        this.$el.appendChild(document.createElement("pre"));
+    }
+    log(string){
+        this.$el.firstElementChild.innerHTML += string + NEWLINE;
+    }
+    logOnClick(string, elem) {
+        elem.addEventListener(
+            "click",
+            event => { // Using arrow functions this = LoggerComponent 
+                       // using normal function this = HTMLButtonElement
+                this.$el.firstElementChild.innerHTML += string;
+            }
+        );
+    }
+}
