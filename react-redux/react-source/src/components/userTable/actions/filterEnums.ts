@@ -4,3 +4,8 @@ export const filterEnums = {
     last_name: 'last_name',
     gender: 'gender'
 }
+
+export interface FilterOptions {
+    filterType: string;
+    value: string;
+}

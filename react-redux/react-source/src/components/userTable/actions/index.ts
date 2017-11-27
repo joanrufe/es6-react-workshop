@@ -1,2 +1,7 @@
-export {initializeUsersAction, updateFilterAction} from './userTableActions';
-export {filterEnums} from './filterEnums';
+export { 
+    initializeUsersAction, 
+    filterByValueAction, 
+    sortTableAction,
+} from './userTableActions';
+
+export { filterEnums, FilterOptions } from './filterEnums';

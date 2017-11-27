@@ -10,4 +10,5 @@ export class UsersAPI {
     public getUsers(){
         return this.users;
     }
+    // @TODO: fetch users from server
 }

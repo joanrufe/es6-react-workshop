@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { UserTableComponent } from './userTable';
 import { actionsEnums } from '../../common/actionsEnums';
 import { UserEntity } from '../../model/userEntity';
-import {initializeUsersAction, updateFilterAction} from './actions/userTableActions';
+import { initializeUsersAction, filterByValueAction, filterEnums, sortTableAction } from './actions/';
 
 const mapStateToProps = state => {
     return {
@@ -13,8 +13,10 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        updateFilters: (filter, value) => dispatch(updateFilterAction(filter, value)),
-        initializeUsers: data => dispatch(initializeUsersAction(data))
+        initializeUsers: data => dispatch(initializeUsersAction(data)),
+        resetFilters: () => dispatch({ type: actionsEnums.RESET_FILTERS }),
+        updateFilters: FilterOptions => dispatch(filterByValueAction(FilterOptions)),
+        toggleSort: elem => dispatch(sortTableAction(elem))
     }
 }
 

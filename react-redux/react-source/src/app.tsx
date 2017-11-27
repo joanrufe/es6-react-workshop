@@ -1,8 +1,7 @@
 import * as React from 'react';
 import { Link } from 'react-router';
-// import { AppRouter } from './router';
 
-export const App = (props: { children? }) => {
+export const App = (props) => {
   return <div className="container-fluid">
         <header>
           <Link className="btn" to="/">Index</Link>

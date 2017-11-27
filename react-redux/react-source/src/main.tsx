@@ -4,7 +4,6 @@ import * as ReactDOM from 'react-dom';
 import { AppProvider } from './provider';
 import { AppContainer } from 'react-hot-loader';
 
-// The following structure is necesary for react hot loader
 const render = (Component) => {
   ReactDOM.render(
     <AppContainer>
