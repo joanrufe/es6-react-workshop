@@ -1,6 +1,5 @@
 import { actionsEnums } from '../common/actionsEnums';
 import { UserEntity } from '../model';
-import { UsersAPI } from '../rest-api/';
 import { filterEnums, FilterOptions } from '../components/userTable/actions/'
 
 export class UserStateReducer {

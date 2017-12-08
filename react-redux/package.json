@@ -57,9 +57,11 @@
   },
   "dependencies": {
     "@types/core-js": "^0.9.41",
+    "@types/material-ui": "^0.18.5",
     "@types/react-redux": "^4.4.47",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
+    "material-ui": "^0.19.4",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.3",

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { TableComponent } from '../../common/components/table/table'
-import { UsersAPI } from '../../rest-api/userApi';
+import { usersApi } from '../../rest-api/userApi';
 import { UserEntity } from '../../model';
 import { filterEnums } from './actions/filterEnums';
 import { ControlPanel } from './controlPanel';
@@ -19,8 +19,7 @@ export class UserTableComponent extends React.Component<Props,{}>{
     constructor(props){
         super(props);
         // Launch initialize users action
-        const api = new UsersAPI();
-        this.props.initializeUsers(api.getUsers());
+        this.props.initializeUsers(usersApi.getUsers());
     }
     render(){
         const renderUsers = 
