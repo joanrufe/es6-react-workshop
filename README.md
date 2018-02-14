@@ -8,6 +8,8 @@ This is a self exploration of the new ES6 functionality and all that is around t
 
 3. Playing with react [GO THERE](./react/README.md)
 
+4. Playing with react and redux [GO THERE](./react-redux/README.md)
+
 
 #### Notes ####
 For a complete reference guide of ES6 features, see http://es6-features.org
