@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { TableComponent } from '../../common/components/table/table'
+import { TableComponent } from '../../common/components/table/table';
 import { usersApi } from '../../rest-api/userApi';
 import { UserEntity } from '../../model';
 import { filterEnums } from './actions/filterEnums';

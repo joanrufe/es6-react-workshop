@@ -1,7 +1,5 @@
 import * as React from 'react';
 import { filterEnums } from './actions/';
-import Select from 'react-select';
-import 'react-select/dist/react-select.css';
 
 interface Props{
     // Action creators

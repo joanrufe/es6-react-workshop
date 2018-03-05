@@ -1,6 +1,6 @@
 import { UserEntity } from '../../../model/';
 import { actionsEnums } from '../../../common/actionsEnums';
-import { FilterOptions } from '../../../components/userTable/actions'
+import { FilterOptions } from '../../../components/userTable/actions';
 
 export const initializeUsersAction = (data : UserEntity[]) => {
     return {
